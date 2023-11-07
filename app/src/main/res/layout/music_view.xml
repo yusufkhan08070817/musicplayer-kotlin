@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+android:id="@+id/mv"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:background="@color/ddblue"
+
+    android:layout_marginBottom="5dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imagemv"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/bg"
+        app:shapeAppearanceOverlay="@style/curve" />
+
+    <TextView
+        android:id="@+id/songnamemv"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@id/songdur"
+        android:layout_toEndOf="@+id/imagemv"
+        android:gravity="center"
+        android:text="songe_name"
+        android:textColor="@color/lblue"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/album"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        android:layout_toStartOf="@id/songdur"
+        android:layout_toEndOf="@+id/imagemv"
+        android:gravity="center"
+        android:text="onge_name"
+        android:textColor="@color/lblue"
+        android:textStyle="bold"
+
+
+        />
+
+    <TextView
+        android:id="@+id/songdur"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="0:00"
+        android:textColor="@color/lblue"
+        android:textStyle="bold"
+
+        />
+
+
+</RelativeLayout>
